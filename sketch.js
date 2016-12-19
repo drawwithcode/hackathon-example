@@ -16,7 +16,7 @@ function setup() {
 
 function draw() {
   volume = mic.getLevel();
-  volume = map(volume,0,1,0,3)
+  volume = map(volume,0,1,0,2)
   push();
 
   translate(0,0);
@@ -54,7 +54,7 @@ function draw() {
   noStroke();
   ellipse(eyeX,eyeY,eyeSize);
   //eyelid
-  var eyelidShift = map(volume,0,1,6,1.5);
+  var eyelidShift = map(volume,0,1,8,1.5);
   fill(255);
   ellipse(eyeX-eyelidShift,eyeY-eyelidShift,eyeSize);
 
