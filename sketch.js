@@ -54,7 +54,7 @@ function draw() {
   noStroke();
   ellipse(eyeX,eyeY,eyeSize);
   //eyelid
-  var eyelidShift = map(volume,0,1,8,1.5);
+  var eyelidShift = map(volume,0,1,14,1.5);
   fill(255);
   ellipse(eyeX-eyelidShift,eyeY-eyelidShift,eyeSize);
 
